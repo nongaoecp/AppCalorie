@@ -1,0 +1,224 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="#ffffffff"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp">
+
+        <FrameLayout
+            android:layout_width="222dp"
+            android:layout_height="50dp"
+            android:id="@+id/frameLayoutname"
+            android:layout_below="@+id/frameLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ชื่อ     :"
+                android:id="@+id/textView10"
+                android:layout_above="@+id/textView5"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_gravity="left|center_vertical" />
+
+            <TextView
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/_name"
+                android:layout_above="@+id/textView4"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+                android:layout_gravity="right|center_vertical" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="222dp"
+            android:layout_height="50dp"
+            android:id="@+id/frameLayout"
+            android:layout_below="@+id/button5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="เวลา  :"
+                android:id="@+id/textView3"
+                android:layout_above="@+id/textView5"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_gravity="left|center_vertical" />
+
+            <TextView
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/date_time"
+                android:layout_above="@+id/textView4"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+                android:layout_gravity="right|center_vertical"
+                android:textSize="15dp" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="222dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/frameLayoutname"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/frameLayout2">
+
+            <TextView
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BMI   :"
+                android:id="@+id/textView6"
+                android:layout_above="@+id/textView5"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_gravity="left|center_vertical" />
+
+            <TextView
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/calbmi"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignLeft="@+id/date_time"
+                android:layout_alignStart="@+id/date_time"
+                android:layout_gravity="right|center_vertical" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="222dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/frameLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/frameLayout4">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BMR  :"
+                android:id="@+id/textView2"
+                android:layout_above="@+id/textView5"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_gravity="left|center_vertical" />
+
+            <TextView
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/bmr"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_alignLeft="@+id/sum"
+                android:layout_alignStart="@+id/sum"
+                android:layout_gravity="right|center_vertical" />
+
+        </FrameLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="222dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/frameLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="รวม  :"
+                android:id="@+id/textView99"
+                android:layout_above="@+id/textView5"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_gravity="left|center_vertical" />
+
+            <TextView
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/sum"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_alignLeft="@+id/sum"
+                android:layout_alignStart="@+id/sum"
+                android:layout_gravity="right|center_vertical" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="222dp"
+            android:layout_height="80dp"
+            android:id="@+id/frameLayout3"
+            android:foregroundGravity="center"
+            android:layout_below="@+id/frameLayout5"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back"
+                android:id="@+id/button6"
+                android:onClick="doBack"
+                android:layout_alignTop="@+id/button3"
+                android:layout_toEndOf="@+id/textView4"
+                android:layout_gravity="left|center_vertical" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/delete"
+                android:id="@+id/button4"
+                android:onClick="doDelete"
+                android:layout_alignTop="@+id/button3"
+                android:layout_toEndOf="@+id/textView4"
+                android:layout_gravity="right|center_vertical" />
+        </FrameLayout>
+
+
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home"
+            android:id="@+id/button5"
+            android:onClick="doHome"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/frameLayout" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
